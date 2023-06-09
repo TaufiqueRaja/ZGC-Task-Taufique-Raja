@@ -1,0 +1,211 @@
+/* background: #E6F0F2;
+ */
+
+ /* .AboutUs{
+    background-color: #e43f26;
+height: 480px;
+background-image: url("/Images/Rectangle\ 2.png");
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+background-size: cover;
+ 
+} */
+.innercontent{
+    top: 50%;
+    left: 10%; 
+    margin: auto;
+    transform: translate(0,-50%);
+}
+.AboutUs .innerdetails{
+    top: 9rem; 
+    left: 5rem;
+}
+.WrittenContent ul li::before{
+    content: "\2022";
+    color:#00BACF;
+    width: 50rem;
+    font-weight:bolder;
+    font-size: 2.5rem;
+    margin: left -1em; 
+}
+
+.image-wrap{
+    width: 20%;
+    height: auto;
+    
+    
+    }
+    .instagram{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #ffff;
+        width: 25% ;
+        height: 55%;
+        outline-offset: -8px;
+        outline: 2px dashed black ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 2px;
+    }
+    .instagram i{
+        font-size: 2vw!important;
+    }
+    .instagram h2{
+        font-size: 2vw;
+        margin: 0;
+    }
+
+    .footer{
+        width: 100%;
+        min-height: 300px;
+        background-color: black;
+        color: white;
+    }
+    .footerItem1{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5rem;
+        gap: 1rem;
+    }
+
+    .footerItem1 ul li{
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+    .footerItem1 ul li input[type=text]{
+        width: 100%;
+        height: 50px;
+    }
+    .footerItem1 ul li button{
+        width: fit-content;
+        padding: 0 20px 0 20px;
+        background-color: #27808e;
+        color: white;
+        height: 50px;
+        font-weight: 500;
+    }
+
+    .footerItem2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 0 1rem 0 1rem;
+    }
+
+.footerItem1 ul li h4{
+        font-weight: bold;
+    }
+
+/* media query */
+/* min-width 500 >= */
+/* max-width  500 <=*/
+
+
+
+@media only screen and (max-width:1200px) {
+   
+    .innercontent h1{       
+        line-height: 2rem;        
+    }
+    .innercontent p{       
+        line-height: 1.3rem;        
+    }
+}
+@media only screen and (max-width:992px) {
+    /* .AboutUs .innercontent{
+        top:4rem;
+        left: 2rem;
+        padding: 0;
+    } */
+    .innercontent{
+        left: 5%;
+        width: 40%!important;
+    }
+    .innercontent h1{       
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: .2rem;        
+    }
+    .innercontent p{       
+        font-size: .8em;    
+        margin-bottom: .2rem;        
+    }
+    .innerAds{
+        flex-direction: column;
+    }
+    .innerAds .innerAds1{
+        width: 100%!important;
+    }
+    .innerAds .innerAds1 .innerAds1-img{
+        height: 350px!important;
+    }
+    .innerAds .innerAds2{
+        width: 100%!important;
+        flex-direction: row!important;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .innercontent h1{
+        line-height: 1.4rem;
+    }
+    .innercontent p{
+        font-size: .6em;
+        line-height: 1rem;
+        margin-bottom: .5rem;
+    }
+    .innercontent button{
+        font-size: .6rem;
+    }
+}
+@media only screen and (max-width:665px){
+    .innercontent h1{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .innercontent h1{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .innercontent p{
+        font-size: .5em;
+        line-height: .8rem;
+        font-weight: 500;
+    }
+    .innerAds .innerAds2{
+        flex-direction: column!important;
+    }
+
+    .instagram{
+        height: 70%;
+    }
+}
+
+@media only screen and (max-width:485px){
+    .innercontent h1{
+        font-size: .5rem;
+        font-weight: 900;
+        margin-bottom: .3rem!important;
+        line-height: .5rem;
+    }
+    .innercontent p{
+        font-size: .3em;
+        line-height: .5rem;
+        font-weight: 500;
+    }
+    .innercontent button{
+        font-size: .3rem;
+    }
+}
